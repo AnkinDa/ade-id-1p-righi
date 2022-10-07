@@ -12,6 +12,13 @@ body {
     border: 0;
 }
 
+a,
+a:visited,
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
 .main-container {
     display: flex;
     align-items: center;
@@ -34,6 +41,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 150;
 }
 
 .control {
@@ -41,7 +49,7 @@ body {
     font-weight: 600;
     background-color: beige;
     border-radius: 30px;
-    padding: 5px 150px 5px 150px;
+    padding: 5px 100px 5px 100px;
 }
 
 .control:hover {
@@ -66,6 +74,11 @@ body {
 .container.b,
 .container.c {
     margin-top: -360px;
+}
+
+.container.d,
+.container.e {
+    margin-top: -270px;
 }
 
 .container.a {
@@ -93,7 +106,8 @@ body {
     margin: 10px auto 0 auto;
 }
 
-.content {
+.content,
+.content li {
     font-size: 20px;
 }
 
@@ -106,4 +120,12 @@ body {
 .container.hide {
     overflow: hidden;
     opacity: 0;
+}
+
+.gallery {
+    background-color: rgb(189, 140, 50);    
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    margin-top: 230px;
+    transform: translateX(-1000%)
 }

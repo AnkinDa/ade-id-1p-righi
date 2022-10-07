@@ -7,7 +7,56 @@ body {
     border: 0;
 }
 
+a,
+a:visited,
+a:hover {
+    color: black;
+}
+
 * {
     margin: 0;
     border: 0;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+}
+
+.home {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.home:hover {
+    cursor: pointer;
+    margin: 0;
+    font-size: 55px;
+    position: absolute;
+    transition: all .3s ease;
+}
+
+.main-container {
+    display: flex;
+    top: 70px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.main-container img {
+    margin: auto;
+    height: 40%;
+    width: 40%;
+}
+
+img.i2 {
+    height: 50%;
+    width: 50%;
+}
+
+img.i1 {
+    height: 70%;
+    width: 70%;
 }
